@@ -55,6 +55,10 @@ export function updateFriend(friend) {
 }
 
 export function removeFriend(friend) {
-    // *** remove the supplied friend from state.friends,
-    // use removeMushroom as a guide
+    // find the index of this friend
+    const index = state.friends.indexOf(friend);
+    // make sure we found something
+    if (index !== -1) {
+        state.friends.splice(index, 1);
+    }
 }
