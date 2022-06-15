@@ -68,7 +68,7 @@ const Friends = createFriends(document.querySelector('#friends'), {
         display();
     },
     handleBye: (friend) => {
-        // *** use removeFriend to remove this friend from state;
+        removeFriend(friend);
         display();
     },
 });
